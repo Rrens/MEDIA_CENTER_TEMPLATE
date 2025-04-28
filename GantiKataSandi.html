@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganti Kata Sandi</title>
+    <link rel="stylesheet" href="GantiKataSandi.html">
+</head>
+<body>
+
+    <div id="navbar-container"></div>
+    <div class="ganti-password-container">
+        <form id="gantiPasswordForm">
+            <div class="input-group">
+                <label>Password Saat Ini</label>
+                <input type="password" id="passwordSaatIni" required>
+            </div>
+
+            <div class="input-group">
+                <label>Password Baru</label>
+                <input type="password" id="passwordBaru" required>
+            </div>
+
+            <div class="input-group">
+                <label>Konfirmasi Password Baru</label>
+                <input type="password" id="konfirmasiPassword" required>
+            </div>
+
+            <button type="submit">Ubah Kata Sandi</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("gantiPasswordForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            let passwordBaru = document.getElementById("passwordBaru").value;
+            let konfirmasiPassword = document.getElementById("konfirmasiPassword").value;
+
+            if (passwordBaru !== konfirmasiPassword) {
+                alert("Konfirmasi kata sandi tidak cocok!");
+                return;
+            }
+
+            alert("Kata sandi berhasil diubah!");
+            window.location.href = "login.html"; // Redirect ke halaman login setelah sukses
+        });
+    </script>
+
+    <div id="footer-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

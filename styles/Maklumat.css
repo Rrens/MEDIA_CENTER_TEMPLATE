@@ -1,0 +1,30 @@
+.maklumat-container {
+    padding: 40px;
+    /* background-color dihapus karena tidak perlu lagi */
+}
+
+.maklumat-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maklumat-description {
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.maklumat-container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.maklumat-image {
+    display: flex;
+    justify-content: center; /* Pusatkan gambar secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal jika perlu */
+    width: 100%;
+}

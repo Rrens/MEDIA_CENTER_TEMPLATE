@@ -1,0 +1,200 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Body */
+  body {
+    background-color: #f4f7fc;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Container */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #337ab7;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Stats Section */
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #ffffff;
+  }
+  
+  .stats-left {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .stats-right {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .stats-right .stat {
+    background-color: #337ab7;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 23%;
+  }
+  
+  .stats-right .stat h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .stats-right .stat p {
+    font-size: 1rem;
+  }
+  
+  .stats-right .stat a.btn {
+    margin-top: 15px;
+    display: inline-block;
+    background-color: #ff6f61;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+  }
+  
+  .stats-right .stat a.btn:hover {
+    background-color: #ff3d2f;
+  }
+  
+  /* Form Pengaduan Section */
+  .form-pengaduan {
+    background-color: #ffffff;
+    padding: 50px 0;
+  }
+  
+  .form-pengaduan h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .form-pengaduan form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .form-pengaduan form input,
+  .form-pengaduan form select {
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-pengaduan form input[type="file"] {
+    padding: 5px;
+  }
+  
+  .form-pengaduan form .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .form-pengaduan form button {
+    padding: 15px 30px;
+    background-color: #337ab7;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+  }
+  
+  .form-pengaduan form button[type="reset"] {
+    background-color: #ccc;
+  }
+  
+  .form-pengaduan form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* About Section */
+  .about {
+    background-color: #f4f7fc;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #337ab7;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .stats {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .stats-right {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .stats-right .stat {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .form-pengaduan form {
+      grid-template-columns: 1fr;
+    }
+  }
+  

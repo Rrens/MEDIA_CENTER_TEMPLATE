@@ -1,0 +1,71 @@
+/* styles/Aksi.css */
+
+/* Reset beberapa gaya default */
+body, h1, h3, p, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Gaya untuk container utama */
+.aksi-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Gaya untuk judul utama */
+.aksi-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Gaya untuk item aksi */
+.aksi-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk ikon */
+.aksi-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+/* Gaya untuk judul item */
+.aksi-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Gaya untuk paragraf */
+.aksi-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk tombol */
+.btn-pelajari {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Efek hover untuk tombol */
+.btn-pelajari:hover {
+    background-color: #0056b3;
+}

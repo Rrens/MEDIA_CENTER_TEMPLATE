@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/Login.css">
+    <link rel="stylesheet" href="styles/Navbar.css">
+    <link rel="stylesheet" href="styles/Footer.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+
+    <div class="login-container">
+        <img src="assets/gambar1.png" alt="Ilustrasi Login" class="login-image">
+        
+        <div class="login-box">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" id="email" name="email" required autocomplete="off">
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="password" name="password" required autocomplete="off">
+                </div>
+
+                <button type="submit">Masuk</button>
+
+                <div class="other-options">
+                    <button type="button">Masuk dengan WargaKu</button>
+                    <button type="button">Masuk dengan KantorKu</button>
+                </div>
+
+                <div class="forgot-password">
+                    <a href="GantiKataSandi.html">Ganti Kata Sandi</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- User Profile Icon and Dropdown (Initially Hidden) -->
+    <div id="user-profile" class="user-profile" style="display: none;">
+        <div class="user-icon">
+            <img src="https://www.gravatar.com/avatar/00000000000000000000000000000000?s=200&d=mp" alt="User Icon" class="user-avatar">
+        <div class="user-name">
+            <span id="username">Eka</span> <span class="dropdown-arrow">▼</span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+    
+    <script defer src="scripts/LoadFooter.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/login.js"></script>
+    <script defer src="scripts/navbar.js"></script>
+
+
+</body>
+</html>

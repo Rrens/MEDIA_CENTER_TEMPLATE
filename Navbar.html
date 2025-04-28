@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="styles/Navbar.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-logo">
+        <a href="index.html">
+            <img src="assets/logo.png" alt="Logo Media Center Surabaya" class="logo">
+            Media Center Surabaya
+        </a>
+    </div>
+
+    <ul class="navbar-links">
+        <li><a href="Home.html">Beranda</a></li>
+        <li><a href="Complaint.html">Pengaduan</a></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="produkDropdown" role="button" aria-expanded="false">
+                Tentang Layanan
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="produkDropdown">
+                <li><a class="dropdown-item" href="Panduan.html">Panduan Penggunaan Aplikasi Wargaku</a></li>
+                <li><a class="dropdown-item" href="Maklumat.html">Maklumat Pelayanan Publik</a></li>
+                <li><a class="dropdown-item" href="StandartPelayananWargaku.html">Standar Pelayanan Wargaku</a></li>
+                <li><a class="dropdown-item" href="HasilSurvey.html">Hasil Survey Kepuasan</a></li>
+                <li><a class="dropdown-item" href="prosedur.html">Prosedur Operasional Standar</a></li>
+                <li><a class="dropdown-item" href="aksi.html">Rencana Aksi Pengaduan</a></li>
+            </ul>
+        </li>
+        <li><a href="https://www.surabaya.go.id/" target="_blank">Web Utama</a></li>
+        <li><a href="https://wbs.surabaya.go.id/" target="_blank">Whistleblowing System</a></li>
+        <li><a href="https://www.lapor.go.id/" target="_blank">SP4N LAPOR!</a></li>
+    </ul>
+
+    <div id="navbar-login" class="navbar-login">
+        <!-- Sebelum login -->
+        <a href="Register.html" class="login-btn" id="registerLink">Daftar</a>
+        <a href="Login.html" class="login-btn" id="loginLink">Masuk</a>
+
+        <!-- Setelah login (Hidden by default) -->
+        <div id="user-profile" class="user-profile">
+            <span id="username">User Wargaku</span>
+            <span class="user-icon">👤</span>
+            <span class="dropdown-arrow" onclick="toggleUserDropdown()">▼</span>
+            
+            <ul id="user-dropdown-menu" class="dropdown-menu" style="display: none;">
+                <li><a href="profile.html">Akun Saya</a></li>
+                <li><a href="#" onclick="handleLogout()">Keluar</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script src="scripts/Navbar.js"></script>
+
+</body>
+</html>

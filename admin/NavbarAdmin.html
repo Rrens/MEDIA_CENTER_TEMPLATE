@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Navbar</title>
+    <link rel="stylesheet" href="styles/admin/NavbarAdmin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav class="admin-navbar">
+        <div class="navbar-container">
+            <!-- Dropdown untuk Website -->
+            <div class="navbar-item has-dropdown" onclick="toggleDropdown('website')">
+                <i class="fa-brands fa-windows"></i>
+                <span>Website</span>
+                <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                <ul class="dropdown-menu" id="dropdown-website">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Diskusi</a></li>
+                    <li><a href="#">Kalender</a></li>
+                    <li><a href="#">Kontak</a></li>
+                    <li><a href="#">Mediacenter</a></li>
+                    <li><a href="#">Situs Web</a></li>
+                    <li><a href="#">Live Chat</a></li>
+                </ul>
+            </div>
+
+            <!-- Dropdown untuk Halaman -->
+            <div class="navbar-item has-dropdown" onclick="toggleDropdown('halaman')">
+                <span>Halaman</span>
+                <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                <ul class="dropdown-menu" id="dropdown-halaman">
+                    <li><a href="#">Edit</a></li>
+                    <li><a href="#">Manage Pages</a></li>
+                </ul>
+            </div>
+
+            <!-- Dropdown untuk Penyesuaian -->
+            <div class="navbar-item has-dropdown" onclick="toggleDropdown('penyesuaian')">
+                <span>Penyesuaian</span>
+                <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                <ul class="dropdown-menu" id="dropdown-penyesuaian">
+                    <li><a href="#">HTML/CSS/JS Editor</a></li>
+                    <li><a href="#">Tambah Fitur</a></li>
+                    <li><a href="#">Lacak Pengunjung</a></li>
+                </ul>
+            </div>
+
+            <!-- Dropdown untuk Mendorong -->
+            <div class="navbar-item has-dropdown" onclick="toggleDropdown('mendorong')">
+                <span>Mendorong</span>
+                <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                <ul class="dropdown-menu" id="dropdown-mendorong">
+                    <li><a href="#">Optimalkan SEO</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bagian Kanan Navbar -->
+        <div class="navbar-right">
+            <div class="navbar-item">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <div class="navbar-item">
+                <i class="fa-solid fa-plus"></i>
+                <span>Buat Baru</span>
+            </div>
+            <div class="navbar-item">
+                <i class="fa-solid fa-pencil"></i>
+                <span>Sunting</span>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        function toggleDropdown(menu) {
+            const dropdown = document.getElementById("dropdown-" + menu);
+            
+            // Tutup semua dropdown kecuali yang diklik
+            document.querySelectorAll('.dropdown-menu').forEach(item => {
+                if (item !== dropdown) {
+                    item.classList.remove('active');
+                }
+            });
+
+            // Toggle dropdown yang diklik
+            dropdown.classList.toggle('active');
+        }
+
+        // Menutup dropdown jika klik di luar
+        document.addEventListener("click", function(event) {
+            if (!event.target.closest(".has-dropdown")) {
+                document.querySelectorAll(".dropdown-menu").forEach(menu => menu.classList.remove("active"));
+            }
+        });
+    </script>
+</body>
+</html>

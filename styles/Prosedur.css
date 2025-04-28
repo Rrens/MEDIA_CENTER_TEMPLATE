@@ -1,0 +1,94 @@
+.prosedur-container {
+    padding: 50px;
+    background-color: #f4f7fc;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+}
+
+.prosedur-container h1 {
+    font-size: 2.5rem;
+    color: #003366;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.prosedur-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom di setiap baris */
+    gap: 20px;
+}
+
+.prosedur-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.prosedur-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.prosedur-item h3 {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    color: #003366;
+}
+
+.prosedur-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.prosedur-item .btn-pelajari {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: auto;
+    text-align: center;
+    width: 100%; /* Tombol memenuhi lebar kartu */
+    transition: background-color 0.3s ease;
+}
+
+.prosedur-item .btn-pelajari:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .prosedur-container {
+        padding: 30px;
+    }
+
+    .prosedur-container h1 {
+        font-size: 2rem;
+    }
+
+    .prosedur-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .prosedur-item p {
+        font-size: 0.9rem;
+    }
+
+    .prosedur-item .btn-pelajari {
+        width: auto;
+    }
+
+    .prosedur-grid {
+        grid-template-columns: 1fr 1fr; /* 2 kolom pada layar kecil */
+    }
+}

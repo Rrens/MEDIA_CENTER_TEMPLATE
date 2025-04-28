@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Media Center Surabaya</title>
+    
+    <!-- Memanggil CSS untuk halaman admin dan footer -->
+    <link rel="stylesheet" href="../styles/admin/AdminHome.css">
+    <link rel="stylesheet" href="../styles/admin/NavbarAdmin.css">
+    <link rel="stylesheet" href="/styles/FooterAdmin.css">
+
+
+</head>
+<body>
+
+<!-- Bagian Navbar Admin -->
+<div class="navbar-admin-container"></div>
+<div class="admin-home-container">
+    <!-- Bagian Utama -->
+    <div class="admin-home-content">
+        <h1 class="admin-home-title">Media Center - Admin</h1>
+        <p class="admin-subheading">Pemerintah Kota Surabaya</p>
+        <p class="admin-home-description">
+            Selamat datang di panel admin Media Center Surabaya!<br />
+            Di sini, Anda dapat memonitor dan mengelola pengaduan masyarakat yang masuk untuk memastikan pelayanan yang lebih baik.
+        </p>
+    </div>
+
+    <!-- Gambar Ilustrasi -->
+    <div class="admin-home-image">
+        <img src="../assets/gambarruwet.png" alt="Ilustrasi Admin" class="admin-home-illustration" />
+        
+        <!-- Gambar menjawab di kanan bawah -->
+        <img src="../assets/menjawab.png" alt="Ilustrasi Menjawab" class="admin-menjawab-image" />
+    </div>
+
+    <!-- Bagian Statistik Admin -->
+    <div class="admin-statistics">
+        <h2>Statistik Pengaduan</h2>
+        <p>Kelola dan monitor pengaduan yang masuk dari masyarakat untuk meningkatkan kualitas pelayanan.</p>
+        <div class="admin-stats">
+            <div class="admin-stat">
+                <h3>91,8%</h3>
+                <p>Pengaduan Diselesaikan</p>
+            </div>
+            <div class="admin-stat">
+                <h3>10.597</h3>
+                <p>Tingkat Penyelesaian Pengaduan</p>
+            </div>
+            <div class="admin-stat">
+                <h3>24/7</h3>
+                <p>Layanan Aktif Setiap Hari</p>
+            </div>
+        </div>
+    </div>      
+
+    <!-- Bagian Tips Pengguna Admin -->
+    <div class="admin-tips">
+        <div class="admin-tip">
+            <div class="admin-user-question">
+                <img src="../assets/bertanya.png" alt="Ilustrasi Bertanya" class="admin-user-image" />
+                <p>Halo!<br />Bagaimana cara menangani pengaduan di Media Center ini?</p>
+            </div>
+            <div class="admin-response">
+                <p>Hai! <br />Berikut cara-cara menangani pengaduan:</p>
+                <ol>
+                    <li>Login terlebih dahulu ke akun admin.</li>
+                    <li>Pilih pengaduan yang masuk, lalu verifikasi dan proses.</li>
+                    <li>Berikan tanggapan atau solusi kepada masyarakat melalui platform ini.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bagian Total Pengaduan -->
+    <div class="admin-total-pengaduan">
+        <h2>Total Pengaduan</h2>
+        <p>Media Center telah menerima banyak pengaduan yang memerlukan perhatian lebih.</p>
+        <div class="admin-pengaduan-stats">
+            <div class="admin-stat">
+                <h3>11.543</h3>
+                <p>Total Pengaduan</p>
+            </div>
+            <div class="admin-stat">
+                <h3>0</h3>
+                <p>Pengaduan Tertunda</p>
+            </div>
+            <div class="admin-stat">
+                <h3>928</h3>
+                <p>Pengaduan Selesai</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tentang Kami -->
+    <div class="admin-about-us">
+        <h2>Tentang Kami</h2>
+        <p>Media Center Pemerintah Kota Surabaya bertujuan untuk menampung partisipasi masyarakat dalam bentuk keluhan, pengaduan, informasi, dan saran terkait proses pembangunan kota.</p>
+        <div class="admin-features">
+            <div class="admin-feature">
+                <img src="../assets/frame2.png" alt="Cepat dan Responsif" class="admin-feature-icon" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div id="footer-container"></div>
+<script src="../scripts/load-navbar-admin.js"></script>
+<script src="admin/navbaradmin.js"></script>
+
+</body>
+</html>

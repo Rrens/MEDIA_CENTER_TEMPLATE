@@ -44,7 +44,7 @@
 
         <header class="main-header">
             <!-- Logo -->
-            <a href="/" class="logo">
+            <a href="/admin/index.html" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
                 <span class="logo-mini"><b>SBY</b></span>
                 <!-- logo for regular state and mobile devices -->
@@ -131,10 +131,12 @@
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="header">MAIN NAVIGATION</li>
                     <li>
-                        <a href="/">
+                        <a href="/admin/index.html">
                             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                         </a>
                     </li>
+
+
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-th"></i> <span>Discuss</span>
@@ -164,7 +166,7 @@
                         </a>
                     </li>
 
-                    <li class="active treeview">
+                    <li class="treeview">
                         <a href="#">
                             <i class="fa fa-th"></i> <span>Media Center</span>
                             <span class="pull-right-container">
@@ -175,9 +177,8 @@
                             <li><a href="media-center.html"><i class="fa fa-circle-o"></i> Table</a>
                             </li>
                             <li><a href="media-center-pengaduan.html"><i class="fa fa-circle-o"></i>Pengaduan</a></li>
-                            <li class="active"><a href="media-center-profile.html"><i class="fa fa-circle-o"></i>Profile</a></li>
-                            <li><a href="media-center-riwayat-tanggapan.html"><i class="fa fa-circle-o"></i>Riwayat
-                                    Tanggapan</a></li>
+                            <li><a href="media-center-profile.html"><i class="fa fa-circle-o"></i>Profile</a></li>
+                            <li><a href="media-center-riwayat-tanggapan.html"><i class="fa fa-circle-o"></i>Riwayat Tanggapan</a></li>
                             <li><a href="media-center-jawaban.html"><i class="fa fa-circle-o"></i>Jawaban</a></li>
                         </ul>
                     </li>
@@ -188,7 +189,7 @@
                         </a>
                     </li>
 
-                    <li>
+                    <li class="active">
                         <a href="live-chat.html">
                             <i class="fa fa-comments-o"></i> <span>Live Chat</span>
                         </a>
@@ -203,7 +204,7 @@
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    Media Center
+                    Live Chat
                     <small>15th Jan 2025</small>
                 </h1>
             </section>
@@ -213,101 +214,54 @@
                 <div class="d-flex justify-content-between align-items-center" style="margin: 10px 0px;">
                     <!-- <div class="d-flex" style="gap: 10px;"> -->
                     <a href="" class="btn btn-primary"><i class="fa fa-plus"></i> Create</a>
-                    <a href="" class="btn btn-default"><i class="fa fa-edit"></i> Edit</a>
                     <!-- </div> -->
                     <div style="gap: 10px; float: right;">
-                        <a href="" class="btn btn-default"><i class="fa fa-print"></i></a>
-                        <a href="" class="btn btn-default"><i class="fa fa-cog"></i></a>
                         <a href="" class="btn btn-default"><i class="fa fa-filter"></i></a>
                         <a href="" class="btn btn-default"><i class="fa fa-navicon"></i></a>
-                        |
-                        <a href="" class="btn btn-default"><i class="fa fa-download"></i> Export</a>
+                        <a href="" class="btn btn-default"><i class="fa fa-star"></i></a>
 
                     </div>
                 </div>
 
 
                 <div class="row">
-                    <div class="col-xs-12">
+                    <div class="col-md-3">
+                        <!-- Profile Image -->
                         <div class="box box-primary">
-                            <div class="box-header with-border">
-                                <h3 class="box-title">Profile</h3>
-                            </div>
-                            <div class="box-body box-profile" style="margin-left: 100px;">
-                                <img class="profile-user-img img-responsive img-circle"
-                                    src="../dist/img/user4-128x128.jpg" alt="User profile picture">
-                                <h3 class="profile-username text-center">Mirza Ruli</h3>
+                            <div class="box-body box-profile text-center">
+                                <img class="img-responsive center-block"
+                                    src="https://calendarmedia.blob.core.windows.net/assets/29c1bac8-58cd-4a60-945f-1e51b4ac65f7.jpg"
+                                    alt="User profile picture" style="width: 100px; border-radius: 50%;">
 
-                                <p class="text-muted text-center">Gubeng, Kertajaya</p>
-                                <div class="form-horizontal">
-                                    <div class="form-group">
-                                        <label class="col-sm-2">NIK</label>
-                                        <div class="col-sm-10">
-                                            <p class="form-control-static">62</p>
-                                        </div>
-                                    </div>
+                                <h3 class="profile-username text-bold mt-2" style="font-size: 18px;">
+                                    mediacenter.surabaya.go.id
+                                </h3>
 
-                                    <div class="form-group">
-                                        <label class="col-sm-2">Jenis Kelamin</label>
-                                        <div class="col-sm-10">
-                                            <p class="form-control-static">Laki laki</p>
+                                <div class="my-3" style="overflow: hidden;">
+                                    <div style="float: left; width: 50%; text-align: right; padding-right: 10px;">
+                                        <div class="d-flex align-items-center text-center" style="gap: 5px;">
+                                            <p class="text-muted mb-0" style="font-size: 14px;"><i
+                                                    class="fa fa-user"></i> Software</p>
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2">Telepon</label>
-                                        <div class="col-sm-10">
-                                            <p class="form-control-static">083830205510</p>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2">Latitude</label>
-                                        <div class="col-sm-10">
-                                            <p class="form-control-static">-7.282547800000001</p>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2">Longtituda</label>
-                                        <div class="col-sm-10">
-                                            <p class="form-control-static">112.75685458545</p>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2">Longtituda</label>
-                                        <div class="col-sm-10">
-                                            <p class="form-control-static">Dinas Komunikasi dan Informatika</p>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2">Alamat</label>
-                                        <div class="col-sm-10">
-                                            <p class="form-control-static">-</p>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2">Email</label>
-                                        <div class="col-sm-10">
-                                            <p class="form-control-static">mediacenter@surabaya.go.id</p>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2">Kecamatan</label>
-                                        <div class="col-sm-10">
-                                            <p class="form-control-static">Gubeng</p>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2">Kelurahan</label>
-                                        <div class="col-sm-10">
-                                            <p class="form-control-static">Kertajaya</p>
+                                    <div style="float: right; width: 50%; text-align: left; padding-left: 10px;">
+                                        <div class="d-flex align-items-center text-center" style="gap: 5px;">
+
+                                            <p class="text-muted mb-0" style="font-size: 14px;"><i
+                                                    class="fa fa-comment"></i> 5161 Sessions</p>
                                         </div>
                                     </div>
                                 </div>
+
+                                <a href="#" class="btn btn-primary btn-block mt-2"><b>Follow</b></a>
                             </div>
+                            <!-- /.box-body -->
                         </div>
                     </div>
                 </div>
+
+            </section>
         </div>
-        </section>
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">

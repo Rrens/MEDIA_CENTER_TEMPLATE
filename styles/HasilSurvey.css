@@ -1,0 +1,116 @@
+.hasil-survey-container {
+    background-color: #f4f7fc;
+    padding: 50px;
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Applying Roboto font */
+}
+
+.hasil-survey-title {
+    font-size: 2.5rem;
+    color: #003366;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hasil-survey-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.hasil-survey-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Make the grid responsive */
+    gap: 20px;
+}
+
+.hasil-survey-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.hasil-survey-item:hover {
+    transform: scale(1.05);
+}
+
+.hasil-survey-image {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Restrict image size */
+    margin-bottom: 15px;
+    border-radius: 8px;
+    object-fit: cover; /* Ensure the image is not stretched */
+}
+
+.hasil-survey-item h3 {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    color: #003366;
+}
+
+.hasil-survey-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.hasil-survey-item .btn-pelajari {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%; /* Pastikan tombol memenuhi lebar kotak */
+}
+
+.hasil-survey-item .btn-pelajari:hover {
+    background-color: #0056b3;
+}
+
+/* Agar tombol Pelajari Selengkapnya lebih sejajar */
+.hasil-survey-item .btn-pelajari {
+    margin-top: auto; /* Menurunkan tombol ke bawah untuk sejajar */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .hasil-survey-container {
+        padding: 30px;
+    }
+
+    .hasil-survey-title {
+        font-size: 2rem;
+    }
+
+    .hasil-survey-description {
+        font-size: 1rem;
+    }
+
+    .hasil-survey-grid {
+        grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+    }
+
+    .hasil-survey-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .hasil-survey-item p {
+        font-size: 0.9rem;
+    }
+
+    .hasil-survey-item .btn-pelajari {
+        width: auto; /* Adjust the width of the button */
+    }
+}

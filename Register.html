@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+    <link rel="stylesheet" href="styles/Navbar.css">
+    <link rel="stylesheet" href="styles/Register.css">
+    <link rel="stylesheet" href="styles/Footer.css">
+    
+    
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <div class="form-container">
+        <h2>Daftar Akun</h2>
+        <p>Silakan Masukkan Data Anda pada formulir di bawah ini!</p>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress-step active" id="step1-btn">1. Data Pribadi</div>
+            <div class="progress-step" id="step2-btn">2. Data Akun dan Kontak</div>
+            <div class="progress-step" id="step3-btn">3. Kode OTP</div>
+        </div>
+
+        <form id="registerForm">
+            <!-- Step 1: Data Pribadi -->
+            <div class="form-section" id="step1">
+                <div class="input-group">
+                    <label for="nama">Nama Lengkap*</label>
+                    <input type="text" id="nama" name="nama" required placeholder="Nama Lengkap">
+                </div>
+
+                <div class="input-group">
+                    <label for="nik">NIK*</label>
+                    <input type="text" id="nik" name="nik" required placeholder="NIK" pattern="^[0-9]+$" title="NIK harus berupa angka">
+                </div>
+
+                <div class="input-group">
+                    <label for="tanggalLahir">Tanggal Lahir*</label>
+                    <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="alamat">Alamat*</label>
+                    <textarea id="alamat" name="alamat" required placeholder="Alamat"></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="jenisKelamin">Jenis Kelamin*</label>
+                    <select id="jenisKelamin" name="jenisKelamin" required>
+                        <option value="Pilih">Pilih</option>
+                        <option value="Laki-laki">Laki-laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="kecamatan">Kecamatan*</label>
+                    <select id="kecamatan" name="kecamatan" required>
+                        <option value="Pilih">Pilih</option>
+                        <option value="Kecamatan Asemrowo">Kecamatan Asemrowo</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="kelurahan">Kelurahan*</label>
+                    <select id="kelurahan" name="kelurahan" required>
+                        <option value="Pilih">Pilih</option>
+                        <option value="Kelurahan Alun-Alun Contong">Kelurahan Alun-Alun Contong</option>
+                    </select>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" id="nextStep1">Lanjut</button>
+                </div>
+            </div>
+
+            <!-- Step 2: Data Akun dan Kontak -->
+            <div class="form-section" id="step2" style="display: none;">
+                <div class="input-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required placeholder="Email">
+                </div>
+
+                <div class="input-group">
+                    <label for="noTelp">No Telp*</label>
+                    <input type="text" id="noTelp" name="noTelp" required placeholder="Nomor Telepon" pattern="^[0-9]+$" title="No Telp harus berupa angka">
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password*</label>
+                    <input type="password" id="password" name="password" required placeholder="Password">
+                </div>
+
+                <div class="input-group">
+                    <label for="confirmPassword">Konfirmasi Password*</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Konfirmasi Password">
+                </div>
+
+                <div class="buttons">
+                    <button type="button" id="backStep1">Kembali</button>
+                    <button type="button" id="nextStep2">Lanjut</button>
+                </div>
+            </div>
+
+            <!-- Step 3: Kode OTP -->
+            <div class="form-section" id="step3" style="display: none;">
+                <div class="input-group">
+                    <label for="otp">Kode OTP*</label>
+                    <input type="text" id="otp" name="otp" required placeholder="Masukkan Kode OTP">
+                </div>
+
+                <div class="buttons">
+                    <button type="button" id="backStep2">Kembali</button>
+                    <button type="button" id="verifyOtp">Verifikasi OTP</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Step 1 to Step 2
+        document.getElementById("nextStep1").addEventListener("click", function() {
+            if (document.getElementById("nama").value && document.getElementById("nik").value && document.getElementById("tanggalLahir").value) {
+                document.getElementById("step1").style.display = "none";
+                document.getElementById("step2").style.display = "block";
+
+                // Update Progress Bar
+                document.getElementById("step1-btn").classList.remove("active");
+                document.getElementById("step2-btn").classList.add("active");
+            } else {
+                alert("Harap lengkapi semua data pada Data Pribadi");
+            }
+        });
+
+        // Step 2 to Step 3
+        document.getElementById("nextStep2").addEventListener("click", function() {
+            if (document.getElementById("email").value && document.getElementById("noTelp").value && document.getElementById("password").value && document.getElementById("confirmPassword").value) {
+                document.getElementById("step2").style.display = "none";
+                document.getElementById("step3").style.display = "block";
+
+                // Update Progress Bar
+                document.getElementById("step2-btn").classList.remove("active");
+                document.getElementById("step3-btn").classList.add("active");
+            } else {
+                alert("Harap lengkapi semua data pada Data Akun dan Kontak");
+            }
+        });
+
+        // Back to Step 1 from Step 2
+        document.getElementById("backStep1").addEventListener("click", function() {
+            document.getElementById("step2").style.display = "none";
+            document.getElementById("step1").style.display = "block";
+
+            // Update Progress Bar
+            document.getElementById("step2-btn").classList.remove("active");
+            document.getElementById("step1-btn").classList.add("active");
+        });
+
+        // Back to Step 2 from Step 3
+        document.getElementById("backStep2").addEventListener("click", function() {
+            document.getElementById("step3").style.display = "none";
+            document.getElementById("step2").style.display = "block";
+
+            // Update Progress Bar
+            document.getElementById("step3-btn").classList.remove("active");
+            document.getElementById("step2-btn").classList.add("active");
+        });
+    </script>
+    <div id="footer-container"></div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

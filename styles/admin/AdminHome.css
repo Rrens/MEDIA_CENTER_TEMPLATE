@@ -1,0 +1,225 @@
+/* Menetapkan font Roboto secara global */
+* {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .admin-home-container {
+    background-color: #f4f7fc;
+    padding: 50px;
+    min-height: 100vh;
+  }
+  
+  .admin-home-content {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .admin-home-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #003366;
+  }
+  
+  .admin-subheading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #003366; /* Warna biru untuk memberi penekanan */
+    margin-top: 5px;
+  }
+  
+  .admin-home-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+    line-height: 1.2;
+  }
+  
+  .admin-home-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .admin-menjawab-image {
+    position: absolute;
+    bottom: -1150px;
+    right: 200px;
+    width: 150px;
+    height: auto;
+    z-index: 10;
+  }
+  
+  .admin-home-illustration {
+    width: 90%;
+    max-width: 700px;
+    height: auto;
+  }
+  
+  /* Statistik Admin */
+  .admin-statistics {
+    background-color: #ffffff;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .admin-statistics h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .admin-statistics p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .admin-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .admin-stat {
+    flex: 1;
+    margin: 0 15px;
+  }
+  
+  .admin-stat h3 {
+    font-size: 2.5rem;
+    color: #007bff;
+  }
+  
+  .admin-stat p {
+    font-size: 1.4rem;
+    color: #555;
+  }
+  
+  /* Tips Pengguna Admin */
+  .admin-tips {
+    background-color: #f1f1f1;
+    padding: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .admin-user-question,
+  .admin-response {
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    max-width: 500px;
+    margin-left: 150px;
+  }
+  
+  .admin-user-question {
+    background-color: #b0a0d0;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    border: 2px solid #003366;
+  }
+  
+  .admin-user-image {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    position: absolute;
+    left: -160px;
+  }
+  
+  .admin-response {
+    background-color: #ffffff;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 2px solid #003366;
+    padding: 20px;
+    max-width: 500px;
+    margin-left: 160px;
+    position: relative;
+    left: 200px;
+  }
+  
+  .admin-response p {
+    margin: 0;
+  }
+  
+  .admin-response ol {
+    padding-left: 25px;
+    margin-top: 15px;
+    font-size: 1.3rem;
+  }
+  
+  /* Total Pengaduan */
+  .admin-total-pengaduan {
+    background-color: #ffffff;
+    padding: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .admin-total-pengaduan h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .admin-total-pengaduan p {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .admin-pengaduan-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .admin-pengaduan-stats .admin-stat {
+    flex: 1;
+    margin: 0 15px;
+  }
+  
+  .admin-pengaduan-stats .admin-stat h3 {
+    font-size: 2.5rem;
+    color: #007bff;
+  }
+  
+  .admin-pengaduan-stats .admin-stat p {
+    font-size: 1.4rem;
+    color: #555;
+  }
+  
+  /* Tentang Kami Admin */
+  .admin-about-us {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-about-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #003366;
+  }
+  
+  .admin-about-us p {
+    font-size: 1.4rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  

@@ -1,0 +1,96 @@
+/* Profile Container */
+.profile-container {
+    width: 50%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Textarea Styling */
+textarea {
+    height: 100px;
+}
+
+/* Buttons Styling */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Save Button */
+.save-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.save-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Cancel Button */
+.cancel-btn {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.cancel-btn:hover {
+    background-color: #f5c6cb; /* Lighter red on hover */
+}
+
+/* Focus Effects */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        width: 90%;
+        max-width: 600px;
+    }
+}

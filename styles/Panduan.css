@@ -1,0 +1,109 @@
+.panduan-container {
+    background-color: #f4f7fc;
+    padding: 50px;
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Ensuring Roboto is applied */
+  }
+  
+  .panduan-title {
+    font-size: 2.5rem;
+    color: #003366;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .panduan-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+  
+  .panduan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .panduan-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .panduan-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .panduan-item h3 {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    color: #003366;
+  }
+  
+  .panduan-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .panduan-item .btn-pelajari {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%; /* Pastikan tombol memenuhi lebar kotak */
+  }
+  
+  .panduan-item .btn-pelajari:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Agar tombol Pelajari Selengkapnya lebih sejajar */
+  .panduan-item .btn-pelajari {
+    margin-top: auto; /* Menurunkan tombol ke bawah untuk sejajar */
+  }
+  
+  /* Responsif */
+  @media (max-width: 768px) {
+    .panduan-container {
+      padding: 30px;
+    }
+  
+    .panduan-title {
+      font-size: 2rem;
+    }
+  
+    .panduan-description {
+      font-size: 1rem;
+    }
+  
+    .panduan-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .panduan-item h3 {
+      font-size: 1.1rem;
+    }
+  
+    .panduan-item p {
+      font-size: 0.9rem;
+    }
+  
+    .panduan-item .btn-pelajari {
+      width: auto; /* Lebar tombol lebih kecil jika diperlukan */
+    }
+  }
+  

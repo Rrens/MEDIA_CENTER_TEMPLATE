@@ -1,0 +1,110 @@
+/* Menetapkan font Roboto secara global */
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk Login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.login-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; 
+    text-align: center;
+}
+
+/* Styling untuk input */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Styling untuk tombol utama (Masuk) */
+button {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Tombol hover */
+button:hover {
+    background-color: #00509d;
+    transform: scale(1.05);
+}
+
+/* Tombol "Masuk dengan WargaKu" dan "Masuk dengan KantorKu" */
+.other-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.other-options button {
+    background-color: white;
+    color: #003366;
+    border: 1px solid #003366;
+    padding: 15px 20px;
+    border-radius: 25px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Efek hover untuk tombol "Masuk dengan WargaKu" dan "Masuk dengan KantorKu" */
+.other-options button:hover {
+    background-color: #003366;
+    color: white;
+}
+
+/* Styling untuk forgot-password */
+.forgot-password {
+    margin-top: 15px;
+}
+
+.forgot-password a {
+    color: #003366;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}

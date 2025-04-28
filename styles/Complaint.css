@@ -1,0 +1,80 @@
+/* src/styles/Complaint.css */
+
+.complaint-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Mengubah posisi menjadi flex-start agar form lebih atas */
+    min-height: 100vh; /* Mengatur tinggi agar memenuhi layar */
+    background: linear-gradient(to bottom, #dbeafe, #fff);
+    background-size: 100% 100%; /* Memastikan background memenuhi seluruh lebar layar */
+    padding-top: 80px;  /* Menambahkan padding atas untuk memberi jarak dari navbar */
+    padding-bottom: 80px; /* Menambahkan padding bawah untuk memberi ruang footer */
+    z-index: 1;
+}
+
+.complaint-form {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.complaint-form h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.complaint-form p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.complaint-form textarea, .complaint-form select, .complaint-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.complaint-form button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.complaint-form button:hover {
+    background-color: #45a049;
+}
+
+.complaint-logo-container {
+    position: absolute;
+    bottom: -150px;
+    z-index: 0;
+    text-align: center;
+}
+
+.complaint-logo {
+    width: 540px;
+    height: auto;
+}
+
+/* Footer Adjustment */
+footer {
+    margin-top: 100px; /* Menambahkan margin pada footer agar lebih turun */
+}
